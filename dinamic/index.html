@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedor</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        div{
+            border: 2px solid black;
+            width: 400px;
+            height: 400px;
+            display: grid;
+        }
+        .line{
+            margin-right: 50px;
+            margin-left: 30px;
+            align-items: center;
+            color:red;
+            display:grid;
+        }
+    </style>
+</head>
+<body>
+    <div class="contnet">HOLA!
+        <label for="width" class="line">Ancho
+            <input type="range" name="width" id="width">
+        </label>
+        <label for="height" class="line">Alto
+            <input type="range" name="height" id="height">
+        </label>
+        <label for="corner" class="line">Esquinas
+            <input type="range" name="corner" id="corner">
+        </label>
+        <label for="corner" class="line">Sombras
+            <input type="range" name="shadow" id="shadow">
+        </label>
+    </div>
+</body>
+</html>
