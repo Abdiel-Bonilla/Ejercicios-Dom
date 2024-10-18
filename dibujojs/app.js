@@ -236,6 +236,6 @@ ctx.stroke();
 
 ctx.strokeStyle = 'black';
 ctx.beginPath();
-ctx.moveTo(305,95);
-ctx.quadraticCurveTo(314,115,325,95);
+ctx.moveTo(325,95);
+ctx.quadraticCurveTo(330,115,340,95);
 ctx.stroke();
