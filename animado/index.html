@@ -20,13 +20,29 @@
         #lienzo{
             background-color: darkblue;
         }
+        a.button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background-color: #ff24c8;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a.button:hover {
+            background-color: #a8099e;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Mi dibujo con Canvas y JS</h1>
-        <canvas id="lienzo" width="600" height="400"></canvas>
+        <canvas id="lienzo" width="590" height="400"></canvas>
     </div>
     <script src="./square.js"></script>
+    <a href="../index.html" class="button">Regresar</a>
 </body>
 </html>
