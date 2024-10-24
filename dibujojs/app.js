@@ -76,7 +76,7 @@ ctx.ellipse(465, 70, 10, 30, Math.PI / 2, 0, 2 * Math.PI);
 ctx.fill();
 
 
-// --- Dibujar el plátano ---
+//Dibujar el plátano
 ctx.beginPath();
 ctx.ellipse(450, 190, 40, 100, Math.PI / 20, 0, 2 * Math.PI); // Forma ovalada del plátano
 ctx.closePath();
@@ -86,45 +86,45 @@ ctx.fill();
 ctx.strokeStyle = 'black'; // Contorno negro
 ctx.stroke();
 
-// Ojos del plátano (enojados)
+// Ojos del plátano
 ctx.fillStyle = 'black';
 ctx.beginPath();
-ctx.roundRect(429, 140, 19, 15, [0, 20, 0, 18]); // Ojo izquierdo parte superior
+ctx.roundRect(429, 140, 19, 15, [0, 20, 0, 18]);
 ctx.fill();
 ctx.stroke();
 ctx.fillStyle = 'black';
 ctx.beginPath();
-ctx.roundRect(429, 140, 19, 15, [20, 0, 20, 0]); // Ojo izquierdo parte inferior
+ctx.roundRect(429, 140, 19, 15, [20, 0, 20, 0]);
 ctx.fill();
 ctx.stroke();
 
 // Ojo derecho
 ctx.fillStyle = 'black';
 ctx.beginPath();
-ctx.roundRect(467, 140, 19, 15, [20, 0, 20, 0]); // Ojo derecho parte inferior
+ctx.roundRect(467, 140, 19, 15, [20, 0, 20, 0]);
 ctx.fill();
 ctx.stroke();
 ctx.fillStyle = 'black';
 ctx.beginPath();
-ctx.roundRect(467, 140, 19, 15, [0, 20, 0, 18]); // Ojo derecho parte superior
+ctx.roundRect(467, 140, 19, 15, [0, 20, 0, 18]);
 ctx.fill();
 ctx.stroke();
 
 // Centros de los ojos del plátano
 ctx.beginPath();
-ctx.arc(439, 148, 3, 0, Math.PI * 2, false); // Centro del ojo izquierdo
-ctx.arc(476, 148, 3, 0, Math.PI * 2, false); // Centro del ojo derecho
+ctx.arc(439, 148, 3, 0, Math.PI * 2, false);
+ctx.arc(476, 148, 3, 0, Math.PI * 2, false);
 ctx.fillStyle = 'white';
 ctx.fill();
 
-// Boca del plátano (gritando)
+// Boca del plátano
 ctx.strokeStyle = 'black';
 ctx.beginPath();
-ctx.arc(450, 200, 15, 0, Math.PI * 2, false); // Boca
+ctx.arc(450, 200, 15, 0, Math.PI * 2, false);
 ctx.stroke();
 
 // Dientes del plátano
-ctx.fillStyle = 'red'; // Dientes inferiores
+ctx.fillStyle = 'red';
 ctx.beginPath();
 ctx.moveTo(440, 205);
 ctx.lineTo(445, 205);

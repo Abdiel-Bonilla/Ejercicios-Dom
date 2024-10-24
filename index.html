@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #24ffab;
+            background: linear-gradient(45deg, #24ffab, #ff24c8);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -15,15 +15,21 @@
             margin: 0;
         }
         .container {
-            background-color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.9);
             padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
             text-align: center;
+            width: 300px;
+        }
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
         }
         .boton {
             display: inline-block;
-            width: 200px; /* Todos los botones tendrán el mismo ancho */
+            width: 100%;
             padding: 10px 0;
             background-color: #ff24c8;
             border: none;
@@ -31,13 +37,11 @@
             font-size: 16px;
             cursor: pointer;
             border-radius: 5px;
+            margin-bottom: 10px;
             transition: background-color 0.3s;
         }
         .boton:hover {
-            background-color: #a8099e; /* Cambiamos el color de fondo en hover */
-        }
-        .ppt {
-            margin-top: 15px; /* Se mantiene la separación entre botones */
+            background-color: #a8099e;
         }
     </style>
 </head>
@@ -45,30 +49,30 @@
     <div class="container">
         <h1>EJERCICIOS DOM</h1>
         <div>
-            <a href="./animado/index.html" class="boton">Animado cuadrado</a>
+            <a href="./animado/index.html" class="boton">Cuadrado de colores</a>
         </div>
-        <div class="ppt">
-            <a href="./animado/index2.html" class="boton">Animado círculo</a>
+        <div>
+            <a href="./animado/index2.html" class="boton">Círculo animado</a>
         </div>
-        <div class="ppt">
-            <a href="./barcolors/index.html" class="boton">Bar Colors</a>
+        <div>
+            <a href="./barcolors/index.html" class="boton">Barra de colores</a>
         </div>
-        <div class="ppt">
+        <div>
             <a href="./colorsbg/index.html" class="boton">Colors BG</a>
         </div>
-        <div class="ppt">
+        <div>
             <a href="./dibujojs/index.html" class="boton">Dibujo JS</a>
         </div>
-        <div class="ppt">
-            <a href="./dinamic/index.html" class="boton">Dinamic</a>
+        <div>
+            <a href="./dinamic/index.html" class="boton">Dinamico!</a>
         </div>
-        <div class="ppt">
-            <a href="./rebota/index.html" class="boton">Rebota</a>
+        <div>
+            <a href="./rebota/index.html" class="boton">Bolita que rebota</a>
         </div>
-        <div class="ppt">
-            <a href="./todoapp/index.html" class="boton">Todo App</a>
+        <div>
+            <a href="./todoapp/index.html" class="boton">Tareas app</a>
         </div>
-        <div class="ppt">
+        <div>
             <a href="./game/index.html" class="boton">Jueguito</a>
         </div>
     </div>

@@ -23,8 +23,8 @@ const food = {
 };
 
 let score = 0;
-let maxScore = localStorage.getItem('maxScore') ? parseInt(localStorage.getItem('maxScore')) : 0;  // Cargar puntaje máximo
-document.getElementById('max-score').textContent = maxScore;  // Mostrar puntaje máximo al iniciar
+let maxScore = localStorage.getItem('maxScore') ? parseInt(localStorage.getItem('maxScore')) : 0;
+document.getElementById('max-score').textContent = maxScore;
 
 let x = 0;
 let y = 1;
@@ -38,11 +38,11 @@ function eat() {
         score++;
         document.getElementById('score').textContent = `Puntaje: ${score}`;
 
-        // Actualiza el puntaje máximo si el puntaje actual lo supera
+
         if (score > maxScore) {
             maxScore = score;
-            localStorage.setItem('maxScore', maxScore);  // Guardar nuevo puntaje máximo
-            document.getElementById('max-score').textContent = maxScore;  // Actualizar en la pantalla
+            localStorage.setItem('maxScore', maxScore);
+            document.getElementById('max-score').textContent = maxScore;
         }
     }
 }
@@ -85,7 +85,7 @@ function resetGame() {
     score = 0;
     document.getElementById('score').textContent = `Puntaje: ${score}`;
 
-    // Cargar puntaje máximo desde localStorage al reiniciar el juego
+
     maxScore = localStorage.getItem('maxScore') ? parseInt(localStorage.getItem('maxScore')) : 0;
     document.getElementById('max-score').textContent = maxScore;
 
